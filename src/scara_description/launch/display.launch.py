@@ -1,4 +1,4 @@
-# Muestra el SCARA en RViz con sliders para mover cada junta (sin robot real)
+    # Muestra el SCARA en RViz con sliders para mover cada junta (sin robot real)
 import os
 import xacro
 from ament_index_python.packages import get_package_share_directory
