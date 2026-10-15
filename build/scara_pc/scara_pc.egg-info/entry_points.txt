@@ -1,0 +1,4 @@
+[console_scripts]
+bridge = scara_pc.bridge:main
+p2p = scara_pc.p2p:main
+teleop = scara_pc.teleop:main

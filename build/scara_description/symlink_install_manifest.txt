@@ -1,0 +1,17 @@
+/home/vvjer/scara_ws/install/scara_description/share/scara_description/urdf/scara.urdf.xacro
+/home/vvjer/scara_ws/install/scara_description/share/scara_description/launch/display.launch.py
+/home/vvjer/scara_ws/install/scara_description/share/ament_index/resource_index/package_run_dependencies/scara_description
+/home/vvjer/scara_ws/install/scara_description/share/ament_index/resource_index/parent_prefix_path/scara_description
+/home/vvjer/scara_ws/install/scara_description/share/scara_description/environment/ament_prefix_path.sh
+/home/vvjer/scara_ws/install/scara_description/share/scara_description/environment/ament_prefix_path.dsv
+/home/vvjer/scara_ws/install/scara_description/share/scara_description/environment/path.sh
+/home/vvjer/scara_ws/install/scara_description/share/scara_description/environment/path.dsv
+/home/vvjer/scara_ws/install/scara_description/share/scara_description/local_setup.bash
+/home/vvjer/scara_ws/install/scara_description/share/scara_description/local_setup.sh
+/home/vvjer/scara_ws/install/scara_description/share/scara_description/local_setup.zsh
+/home/vvjer/scara_ws/install/scara_description/share/scara_description/local_setup.dsv
+/home/vvjer/scara_ws/install/scara_description/share/scara_description/package.dsv
+/home/vvjer/scara_ws/install/scara_description/share/ament_index/resource_index/packages/scara_description
+/home/vvjer/scara_ws/install/scara_description/share/scara_description/cmake/scara_descriptionConfig.cmake
+/home/vvjer/scara_ws/install/scara_description/share/scara_description/cmake/scara_descriptionConfig-version.cmake
+/home/vvjer/scara_ws/install/scara_description/share/scara_description/package.xml

@@ -1,0 +1,33 @@
+running egg_info
+writing ../../build/scara_pc/scara_pc.egg-info/PKG-INFO
+writing dependency_links to ../../build/scara_pc/scara_pc.egg-info/dependency_links.txt
+writing entry points to ../../build/scara_pc/scara_pc.egg-info/entry_points.txt
+writing requirements to ../../build/scara_pc/scara_pc.egg-info/requires.txt
+writing top-level names to ../../build/scara_pc/scara_pc.egg-info/top_level.txt
+reading manifest file '../../build/scara_pc/scara_pc.egg-info/SOURCES.txt'
+writing manifest file '../../build/scara_pc/scara_pc.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/vvjer/scara_ws/build/scara_pc/build
+creating /home/vvjer/scara_ws/build/scara_pc/build/lib
+creating /home/vvjer/scara_ws/build/scara_pc/build/lib/scara_pc
+copying scara_pc/__init__.py -> /home/vvjer/scara_ws/build/scara_pc/build/lib/scara_pc
+copying scara_pc/bridge.py -> /home/vvjer/scara_ws/build/scara_pc/build/lib/scara_pc
+running install
+running install_lib
+creating /home/vvjer/scara_ws/install/scara_pc/lib/python3.12/site-packages/scara_pc
+copying /home/vvjer/scara_ws/build/scara_pc/build/lib/scara_pc/__init__.py -> /home/vvjer/scara_ws/install/scara_pc/lib/python3.12/site-packages/scara_pc
+copying /home/vvjer/scara_ws/build/scara_pc/build/lib/scara_pc/bridge.py -> /home/vvjer/scara_ws/install/scara_pc/lib/python3.12/site-packages/scara_pc
+byte-compiling /home/vvjer/scara_ws/install/scara_pc/lib/python3.12/site-packages/scara_pc/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/vvjer/scara_ws/install/scara_pc/lib/python3.12/site-packages/scara_pc/bridge.py to bridge.cpython-312.pyc
+running install_data
+creating /home/vvjer/scara_ws/install/scara_pc/share/ament_index
+creating /home/vvjer/scara_ws/install/scara_pc/share/ament_index/resource_index
+creating /home/vvjer/scara_ws/install/scara_pc/share/ament_index/resource_index/packages
+copying resource/scara_pc -> /home/vvjer/scara_ws/install/scara_pc/share/ament_index/resource_index/packages
+copying package.xml -> /home/vvjer/scara_ws/install/scara_pc/share/scara_pc
+running install_egg_info
+Copying ../../build/scara_pc/scara_pc.egg-info to /home/vvjer/scara_ws/install/scara_pc/lib/python3.12/site-packages/scara_pc-0.1.0-py3.12.egg-info
+running install_scripts
+Installing bridge script to /home/vvjer/scara_ws/install/scara_pc/lib/scara_pc
+writing list of installed files to '/home/vvjer/scara_ws/build/scara_pc/install.log'

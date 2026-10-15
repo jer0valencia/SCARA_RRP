@@ -1,0 +1,20 @@
+[0.683s] Invoking command in '/home/vvjer/scara_ws/build/scara_pc': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/vvjer/scara_ws/build/scara_pc/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vvjer/scara_ws/install/scara_pc/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/vvjer/scara_ws/build/scara_pc/build --no-deps symlink_data --force
+[0.887s] running develop
+[1.002s] running egg_info
+[1.013s] writing scara_pc.egg-info/PKG-INFO
+[1.013s] writing dependency_links to scara_pc.egg-info/dependency_links.txt
+[1.013s] writing entry points to scara_pc.egg-info/entry_points.txt
+[1.013s] writing requirements to scara_pc.egg-info/requires.txt
+[1.013s] writing top-level names to scara_pc.egg-info/top_level.txt
+[1.033s] reading manifest file 'scara_pc.egg-info/SOURCES.txt'
+[1.034s] writing manifest file 'scara_pc.egg-info/SOURCES.txt'
+[1.044s] running build_ext
+[1.044s] Creating /home/vvjer/scara_ws/install/scara_pc/lib/python3.12/site-packages/scara-pc.egg-link (link to .)
+[1.045s] Installing bridge script to /home/vvjer/scara_ws/install/scara_pc/lib/scara_pc
+[1.045s] Installing teleop script to /home/vvjer/scara_ws/install/scara_pc/lib/scara_pc
+[1.045s] 
+[1.045s] Installed /home/vvjer/scara_ws/build/scara_pc
+[1.045s] running symlink_data
+[1.045s] symbolically linking /home/vvjer/scara_ws/build/scara_pc/resource/scara_pc -> /home/vvjer/scara_ws/install/scara_pc/share/ament_index/resource_index/packages
+[1.045s] symbolically linking /home/vvjer/scara_ws/build/scara_pc/package.xml -> /home/vvjer/scara_ws/install/scara_pc/share/scara_pc
+[1.074s] Invoked command in '/home/vvjer/scara_ws/build/scara_pc' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/vvjer/scara_ws/build/scara_pc/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vvjer/scara_ws/install/scara_pc/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/vvjer/scara_ws/build/scara_pc/build --no-deps symlink_data --force

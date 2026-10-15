@@ -1,0 +1,26 @@
+[0.547s] Invoking command in '/home/vvjer/scara_ws/src/scara_pc': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/vvjer/scara_ws/build/scara_pc/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vvjer/scara_ws/install/scara_pc/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/scara_pc build --build-base /home/vvjer/scara_ws/build/scara_pc/build install --record /home/vvjer/scara_ws/build/scara_pc/install.log --install-scripts $base/lib/scara_pc --single-version-externally-managed install_data
+[0.688s] running egg_info
+[0.699s] writing ../../build/scara_pc/scara_pc.egg-info/PKG-INFO
+[0.699s] writing dependency_links to ../../build/scara_pc/scara_pc.egg-info/dependency_links.txt
+[0.699s] writing entry points to ../../build/scara_pc/scara_pc.egg-info/entry_points.txt
+[0.699s] writing requirements to ../../build/scara_pc/scara_pc.egg-info/requires.txt
+[0.699s] writing top-level names to ../../build/scara_pc/scara_pc.egg-info/top_level.txt
+[0.718s] reading manifest file '../../build/scara_pc/scara_pc.egg-info/SOURCES.txt'
+[0.719s] writing manifest file '../../build/scara_pc/scara_pc.egg-info/SOURCES.txt'
+[0.719s] running build
+[0.719s] running build_py
+[0.719s] copying scara_pc/teleop.py -> /home/vvjer/scara_ws/build/scara_pc/build/lib/scara_pc
+[0.719s] running install
+[0.723s] running install_lib
+[0.732s] copying /home/vvjer/scara_ws/build/scara_pc/build/lib/scara_pc/teleop.py -> /home/vvjer/scara_ws/install/scara_pc/lib/python3.12/site-packages/scara_pc
+[0.732s] byte-compiling /home/vvjer/scara_ws/install/scara_pc/lib/python3.12/site-packages/scara_pc/teleop.py to teleop.cpython-312.pyc
+[0.733s] running install_data
+[0.733s] copying package.xml -> /home/vvjer/scara_ws/install/scara_pc/share/scara_pc
+[0.733s] running install_egg_info
+[0.743s] removing '/home/vvjer/scara_ws/install/scara_pc/lib/python3.12/site-packages/scara_pc-0.1.0-py3.12.egg-info' (and everything under it)
+[0.743s] Copying ../../build/scara_pc/scara_pc.egg-info to /home/vvjer/scara_ws/install/scara_pc/lib/python3.12/site-packages/scara_pc-0.1.0-py3.12.egg-info
+[0.744s] running install_scripts
+[0.818s] Installing bridge script to /home/vvjer/scara_ws/install/scara_pc/lib/scara_pc
+[0.818s] Installing teleop script to /home/vvjer/scara_ws/install/scara_pc/lib/scara_pc
+[0.819s] writing list of installed files to '/home/vvjer/scara_ws/build/scara_pc/install.log'
+[0.836s] Invoked command in '/home/vvjer/scara_ws/src/scara_pc' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/vvjer/scara_ws/build/scara_pc/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vvjer/scara_ws/install/scara_pc/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/scara_pc build --build-base /home/vvjer/scara_ws/build/scara_pc/build install --record /home/vvjer/scara_ws/build/scara_pc/install.log --install-scripts $base/lib/scara_pc --single-version-externally-managed install_data

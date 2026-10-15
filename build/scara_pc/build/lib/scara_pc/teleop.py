@@ -1,0 +1,83 @@
+# Movimiento manual con teclado (solo terminal) + hombre muerto.
+#   Escucha  /scara/joint_states  (posición medida)
+#   Publica  /scara/target        ([r1 rad, r2 rad, p mm])
+#
+# MANTÉN presionada la tecla para mover; al soltarla el robot se queda quieto (hombre muerto).
+#   Q / A = R1 + / -     W / S = R2 + / -     E / D = P + / -
+#
+# La terminal no avisa cuando se suelta una tecla, pero mientras está presionada la REPITE
+# (~30 veces por segundo). Si deja de llegar por RELEASE_S segundos, se toma como soltada.
+import sys
+import time
+import select
+import termios
+import tty
+import rclpy
+from rclpy.node import Node
+from std_msgs.msg import Float64MultiArray
+from sensor_msgs.msg import JointState
+
+# Cuánto adelante de la posición medida se pone el objetivo mientras la tecla está presionada.
+# Más grande = jog más rápido. Unidades: rad, rad, mm.
+LEAD = [0.3, 0.3, 10.0]
+# Debe ser mayor que el retardo de repetición del teclado (en Ubuntu ~0.5 s por defecto)
+RELEASE_S = 0.6
+KEYS = {'q': (0, +1), 'a': (0, -1), 'w': (1, +1), 's': (1, -1), 'e': (2, +1), 'd': (2, -1)}
+
+
+class Teleop(Node):
+    def __init__(self):
+        super().__init__('teleop')
+        self.meas = None        # última posición medida
+        self.target = None      # objetivo que se está mandando
+        self.key = None         # tecla que se está sosteniendo (None = ninguna)
+        self.last_key_time = 0.0
+        self.pub = self.create_publisher(Float64MultiArray, '/scara/target', 10)
+        self.create_subscription(JointState, '/scara/joint_states', self.on_state, 10)
+        self.create_timer(0.05, self.tick)   # 20 Hz
+        self.get_logger().info('Mantén Q/A (R1), W/S (R2), E/D (P). Ctrl+C para salir.')
+
+    def on_state(self, msg):
+        self.meas = list(msg.position)
+
+    def publish(self):
+        self.pub.publish(Float64MultiArray(data=self.target))
+
+    def tick(self):
+        # Leer todas las teclas que llegaron desde el último ciclo, sin bloquear
+        while select.select([sys.stdin], [], [], 0)[0]:
+            c = sys.stdin.read(1).lower()
+            if c in KEYS:
+                if c != self.key and self.meas is not None:
+                    self.target = list(self.meas)   # tecla nueva: arranca desde donde está
+                self.key = c
+                self.last_key_time = time.monotonic()
+
+        if self.key is None or self.meas is None:
+            return
+
+        if time.monotonic() - self.last_key_time > RELEASE_S:   # se soltó: quedarse quieto
+            self.target = list(self.meas)
+            self.publish()
+            self.key = None
+            return
+
+        axis, d = KEYS[self.key]
+        self.target[axis] = self.meas[axis] + d * LEAD[axis]
+        self.publish()
+
+
+def main():
+    rclpy.init()
+    old = termios.tcgetattr(sys.stdin)
+    tty.setcbreak(sys.stdin)            # entrega cada tecla al instante y sin eco; Ctrl+C sigue funcionando
+    try:
+        rclpy.spin(Teleop())
+    except KeyboardInterrupt:
+        pass
+    finally:
+        termios.tcsetattr(sys.stdin, termios.TCSADRAIN, old)   # deja la terminal como estaba
+
+
+if __name__ == '__main__':
+    main()

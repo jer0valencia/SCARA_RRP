@@ -1,0 +1,9 @@
+running egg_info
+creating ../../build/scara_pc/scara_pc.egg-info
+writing ../../build/scara_pc/scara_pc.egg-info/PKG-INFO
+writing dependency_links to ../../build/scara_pc/scara_pc.egg-info/dependency_links.txt
+writing entry points to ../../build/scara_pc/scara_pc.egg-info/entry_points.txt
+writing requirements to ../../build/scara_pc/scara_pc.egg-info/requires.txt
+writing top-level names to ../../build/scara_pc/scara_pc.egg-info/top_level.txt
+writing manifest file '../../build/scara_pc/scara_pc.egg-info/SOURCES.txt'
+error: package directory 'scara_pc' does not exist
